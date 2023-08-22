@@ -1,0 +1,165 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegador {
+    background-color: #3D50B6;
+    height: 50px;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: white;
+}
+
+.navegador a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+.navegador ul {
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    height: 50px;
+}
+
+.navegador li {
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+.navegador li.threeline-icon {
+    color: #FFFFFF;
+    display: none;
+}
+
+.apresentacao h2 {
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+
+.grid {
+    margin-top: 65px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 24px;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 50px;
+}
+
+.grid img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.servicos h2 {
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+
+.caminho {
+    list-style: none;
+    padding-left: 20;
+    padding-top: 20;
+    color: black;
+}
+
+.caminho li {
+    display: inline-block;
+}
+
+.caminho a {
+    color: black;
+}
+
+/*==============================Animação================================*/
+
+.navegador ul li {
+    opacity: 0;
+    animation: mostrarLista 1s 1s forwards;
+}
+
+@keyframes mostrarLista {
+    to {
+        opacity: 1;
+    }
+}
+
+/*===============================Responsivo===========================*/
+
+@media (max-width: 600px) {
+
+    .navegador li {
+        display: none;
+    }
+
+    .navegador li.threeline-icon {
+        display: inline-block;
+    }
+
+    .menujs {
+        height: auto;
+    }
+
+    .menujs ul {
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .menujs li {
+        display: block;
+        border-bottom: solid #000000 1.5px;
+    }
+
+    .apresentacao h2 {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    .grid {
+        margin-top: 65px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 24px;
+        text-align: justify;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .grid img {
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicos h2 {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
+}
